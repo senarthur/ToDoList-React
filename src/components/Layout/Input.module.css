@@ -1,0 +1,31 @@
+.inputbox {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 0.9em;
+    color: #333;
+    transition: .5s;
+    pointer-events: none;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -1px;
+}
+
+.input {
+    padding: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #D1D3D4;
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
